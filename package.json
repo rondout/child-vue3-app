@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:micro": "vite --mode micro",
     "build": "run-p type-check \"build-only {@}\" -- && npm run deploy",
     "deploy": "cp -r ./dist/* ../servers/static/vue-app/dist",
     "preview": "vite preview",
